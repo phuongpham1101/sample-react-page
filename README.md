@@ -4,6 +4,8 @@ This project was created using `create-react-app`. The purpose is for homepage d
 
 This version is currently only not responsive, the design is for desktop only. Only the links in the primary menu work.
 
+All the data is stored in `data.js` for demo reason.
+
 ### Potential Improvements
 
 - Move React Router code block in side `App.js` into a different component file. Generate `Route` components using lists and keys instead.

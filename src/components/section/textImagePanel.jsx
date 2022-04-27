@@ -24,9 +24,10 @@ const TextImagePanel = ({img, content}) => {
 
 const StyledTextImagePanel = styled.section`
   display: flex;
+  flex-direction: column;
   flex: 1;
   .img {
-    width: 50%;
+    width: 100%;
     img {
       width: 100%;
       height: 100%;
@@ -34,7 +35,6 @@ const StyledTextImagePanel = styled.section`
     }
   }
   .content {
-    width: 50%;
     height: auto;
     min-height: 100%;
 
@@ -53,6 +53,16 @@ const StyledTextImagePanel = styled.section`
 
     .intro {
       font-size: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    .img {
+      width: 50%;
+    }
+    .content {
+      width: 50%;
     }
   }
 `;

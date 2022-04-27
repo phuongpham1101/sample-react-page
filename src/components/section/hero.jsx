@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
 import Button from "../Button"
 import { Container }from "../../styles";
-import { css } from "styled-components";
 
 const Hero = ({imgURL, layout="small", content}) => {
 
@@ -29,7 +29,6 @@ const BigHeroContent = ({header, intro, cta}) => {
       <Button {...cta} />
     </Container>
   );
-
 }
 
 const SmallHeroContent = ({header}) => {
@@ -67,8 +66,14 @@ const StyledHero = styled.section`
     padding: 20px;
     background-color: white;
     color: var(--green);
-    max-width: 50%;
     font-size: 20px;
+
+    @media screen and (min-width: 470px) {
+      max-width: 70%;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 50%;
+    }
   }
 `;
 

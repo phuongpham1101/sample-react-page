@@ -17,6 +17,31 @@ const main = css`
       padding: 10px 0;
     }
   }
+
+  nav.mobile {
+    background: #000;
+    padding: 15px;
+    text-align: center;
+
+    ul {
+      flex-direction: column;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    header {
+      .menu-icon {
+        display: inline-block;
+      }
+      nav.desktop-menu {
+        display: none;
+      }
+    }
+  }
 `;
 
 export default main;

@@ -1,6 +1,6 @@
+import { Grid } from "react-flexbox-grid";
 import styled, { css } from "styled-components";
 
-import { Container } from "../../styles";
 import Button from "../Button";
 
 const SearchPanel = ({person, action, cta}) => {
@@ -17,18 +17,23 @@ const SearchPanel = ({person, action, cta}) => {
     background-color: var(--red);
     border: 2px solid var(--red);
     color: white;
+    @media screen and (max-width: 767px) {
+      margin: 20px 0 0;
+    }
   `;
 
   return(
     <StyledSearchPanel>
-      <Container>
+      <Grid>
         <h1>How can we help you?</h1>
         <p className="intro">Let us know who you are and what you're looking for, and we'll help get you to the right place</p>
         <div class="search">
-          I am <select>{personSelect}</select> and I want <select>{actionSelect}</select>
+          <div>
+            I am <select>{personSelect}</select> and I want <select>{actionSelect}</select>
+          </div>
           <Button {...cta} buttonStyle={buttonStyle} />
         </div>
-      </Container>
+      </Grid>
     </StyledSearchPanel>
   );
 }
@@ -47,11 +52,16 @@ const StyledSearchPanel = styled.section`
     background-color: white;
     padding: 30px;
     font-size: 20px;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
     select {
       border: 0;
       border-bottom: 2px solid var(--blue);
       color: var(--blue);
-      margin: 0 10px;
+      margin: 10px;
       font-size: 20px;
       font-weight: bold;
     }

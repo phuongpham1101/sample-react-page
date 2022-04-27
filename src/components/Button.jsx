@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Button = ({url, label, buttonStyle}) => {
   return(
-    <a href={url}>
+    <a className="cta" href={url}>
       <StyledButton buttonStyle={buttonStyle}>{label}</StyledButton>
     </a>
   );

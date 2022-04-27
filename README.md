@@ -2,8 +2,6 @@
 
 This project was created using `create-react-app`. The purpose is for homepage demo.
 
-This version is currently only not responsive, the design is for desktop only. Only the links in the primary menu work.
-
 All the data is stored in `data.js` for demo reason.
 
 ### Potential Improvements
@@ -12,4 +10,3 @@ All the data is stored in `data.js` for demo reason.
 - Work on router/navigation for blogs/posts
 - Integrate Redux
 - Hover animations for buttons/links.
-- Responsive work

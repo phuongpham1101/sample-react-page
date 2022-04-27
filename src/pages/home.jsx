@@ -1,5 +1,7 @@
-import { Hero, SearchPanel, TextImagePanel } from "../components";
-import BlogPanel from "../components/section/blogPanel";
+import {  Hero, 
+          SearchPanel, 
+          TextImagePanel,
+          BlogPanel } from "../components";
 
 const Home = ({home}) => {
   return(

@@ -10,8 +10,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-weight: bold;
     width: 100%;
+    max-width: 100vw;
     min-height: 100%;
-    overflow-x: hidden;
+    pverflow: auto;
   }
 
   a {
@@ -24,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   img {
+    display: block;
     max-width: 100%;
   }
 
